@@ -1,0 +1,97 @@
+:root {
+    --bg1: #ffffff;
+    --bg2: #efeeee;
+    --color: #000000;
+    --color2: #000000;
+
+}
+
+.dark {
+    --bg1:#3c3c3c;
+    --bg2:#000000;
+    --color: #f0f0f0;
+    --color2: #dedede;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--bg2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 2px var(--color);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: var(--color);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: var(--color2);
+}
+
+textarea {
+    background: var(--bg1);
+    color: var(--color);
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--color);
+    resize: none;
+    box-sizing: border-box;
+}
+
+.counter {
+    margin-top: 10px;
+    color: var(--color);
+}
+
+.danger {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.warning {
+    color: orange;
+}
+
+.dark-btn button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.dark-btn button {
+    padding: 10px 20px;
+    /* border: none; */
+    border-radius: 20px;
+    background-color: var(--bg2);
+    color: var(--color);
+    cursor: pointer;
+}
+
+.dark-btn button:hover {
+    background-color: var(--color);
+    color: var(--bg2);
+    padding: 15px 25px;
+    border-radius: 30px;
+    top: 15px;
+    right: 20px
+}
